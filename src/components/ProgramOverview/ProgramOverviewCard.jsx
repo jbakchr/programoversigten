@@ -4,12 +4,13 @@ import { Card } from "@mui/material";
 import { ProgramOverviewHeader } from "./ProgramOverviewHeader";
 
 import "./ProgramOverview.css";
+import { ProgramOverviewGrid } from "./ProgramOverviewGrid";
 
 export const ProgramOverviewCard = () => {
   return (
     <Card className="program-overview">
       <ProgramOverviewHeader />
-      <p>blah</p>
+      <ProgramOverviewGrid />
     </Card>
   );
 };
