@@ -1,5 +1,6 @@
 import React from "react";
+import { Container } from "@mui/material";
 
 export const HomePage = () => {
-  return <div>Programoversigten</div>;
+  return <Container maxWidth="md">Programoversigten</Container>;
 };
