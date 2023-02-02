@@ -4,6 +4,7 @@ import { Card } from "@mui/material";
 import cardboard from "../../assets/background2.jpeg";
 
 import "./ProgramOverview.css";
+import { ProgramOverviewHeader } from "./ProgramOverviewHeader";
 
 export const ProgramOverviewCard = () => {
   return (
@@ -11,11 +12,7 @@ export const ProgramOverviewCard = () => {
       className="program-overview"
       sx={{ backgroundImage: `url(${cardboard})` }}
     >
-      <h1
-        style={{ textAlign: "center", marginBottom: "50px", fontSize: "3vw" }}
-      >
-        Programoversigt
-      </h1>
+      <ProgramOverviewHeader />
       <p>blah</p>
     </Card>
   );
