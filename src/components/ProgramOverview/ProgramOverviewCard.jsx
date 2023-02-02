@@ -12,7 +12,7 @@ export const ProgramOverviewCard = () => {
       sx={{ backgroundImage: `url(${cardboard})` }}
     >
       <h1
-        style={{ textAlign: "center", marginBottom: "50px", fontSize: "5vw" }}
+        style={{ textAlign: "center", marginBottom: "50px", fontSize: "3vw" }}
       >
         Programoversigt
       </h1>
