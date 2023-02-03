@@ -2,9 +2,9 @@ import React from "react";
 import { Card } from "@mui/material";
 
 import { ProgramOverviewHeader } from "./ProgramOverviewHeader";
+import { ProgramOverviewGrid } from "./ProgramOverviewGrid";
 
 import "./ProgramOverview.css";
-import { ProgramOverviewGrid } from "./ProgramOverviewGrid";
 
 export const ProgramOverviewCard = () => {
   return (
