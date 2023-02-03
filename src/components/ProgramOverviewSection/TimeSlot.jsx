@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import { TextField } from "@mui/material";
 
-export const TimeSlot = () => {
+export const TimeSlot = ({ timeSlot }) => {
   return (
     <Grid
       xs={3}
@@ -28,6 +28,7 @@ export const TimeSlot = () => {
         inputProps={{
           style: { textTransform: "uppercase" },
         }}
+        value={timeSlot}
       />
       <p style={{ marginLeft: "5px", fontWeight: "bold" }}>:</p>
     </Grid>
