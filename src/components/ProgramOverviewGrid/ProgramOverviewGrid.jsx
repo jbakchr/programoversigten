@@ -6,7 +6,7 @@ import { ProgramOverviewSection } from "../ProgramOverviewSection/ProgramOvervie
 
 export const ProgramOverviewGrid = () => {
   const [sections, setSections] = useState([
-    { id: 1, timeSlot: "18:30", title: "Din mor" },
+    { id: 1, timeSlot: "", title: "" },
   ]);
 
   return (
