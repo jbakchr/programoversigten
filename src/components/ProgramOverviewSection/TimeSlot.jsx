@@ -6,7 +6,9 @@ export const TimeSlot = ({ id, timeSlot, setTimeSlot }) => {
   const inputRef = useRef();
 
   useEffect(() => {
-    inputRef.current.focus();
+    if (!timeSlot) {
+      inputRef.current.focus();
+    }
   });
 
   return (
