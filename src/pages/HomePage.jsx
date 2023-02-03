@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-import { ProgramOverviewCard } from "../components/ProgramOverview/ProgramOverviewCard";
+import { ProgramOverviewCard } from "../components/ProgramOverviewCard/ProgramOverviewCard";
 
 export const HomePage = () => {
   return (
