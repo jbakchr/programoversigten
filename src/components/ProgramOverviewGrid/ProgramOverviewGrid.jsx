@@ -6,8 +6,14 @@ import { ProgramOverviewSection } from "../ProgramOverviewSection/ProgramOvervie
 
 export const ProgramOverviewGrid = () => {
   const [sections, setSections] = useState([
-    { id: 1, timeSlot: "", title: "" },
+    { id: 0, timeSlot: "", title: "" },
   ]);
+
+  const setTimeSlot = (id, text) => {
+    const listOfSections = [...sections];
+    listOfSections[id].timeSlot = text;
+    setSections(listOfSections);
+  };
 
   return (
     <Container maxWidth="sm">
@@ -15,7 +21,11 @@ export const ProgramOverviewGrid = () => {
         <Grid container style={{ display: "flex", alignItems: "center" }}>
           {sections.map((section) => {
             return (
-              <ProgramOverviewSection key={section.id} section={section} />
+              <ProgramOverviewSection
+                key={section.id}
+                section={section}
+                setTimeSlot={setTimeSlot}
+              />
             );
           })}
         </Grid>
