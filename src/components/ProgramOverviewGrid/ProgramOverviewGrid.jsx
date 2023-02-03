@@ -21,6 +21,13 @@ export const ProgramOverviewGrid = () => {
     setSections(listOfSections);
   };
 
+  const addNewSection = () => {
+    setSections([
+      ...sections,
+      { id: sections.length, timeSlot: "", title: "" },
+    ]);
+  };
+
   return (
     <Container maxWidth="sm">
       <Box sx={{ flexGrow: 1 }}>
@@ -32,6 +39,7 @@ export const ProgramOverviewGrid = () => {
                 section={section}
                 setTimeSlot={setTimeSlot}
                 setTitle={setTitle}
+                addNewSection={addNewSection}
               />
             );
           })}

@@ -2,7 +2,13 @@ import React from "react";
 import { TextField } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
-export const ProgramTitle = ({ id, title, setTitle }) => {
+export const ProgramTitle = ({ id, title, setTitle, addNewSection }) => {
+  const createNewSection = (e) => {
+    if (e.key === "Enter") {
+      addNewSection();
+    }
+  };
+
   return (
     <Grid xs={9}>
       <TextField
@@ -21,6 +27,7 @@ export const ProgramTitle = ({ id, title, setTitle }) => {
         }}
         value={title}
         onChange={(e) => setTitle(id, e.target.value)}
+        onKeyPress={createNewSection}
       />
     </Grid>
   );
