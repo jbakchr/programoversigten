@@ -8,24 +8,49 @@ export const ProgramOverviewGrid = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container style={{ display: "flex", alignItems: "center" }}>
           <Grid
-            xs={4}
-            style={{ display: "flex", alignItems: "center", fontSize: "35px" }}
+            xs={3}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              fontSize: "35px",
+              justifyContent: "top",
+            }}
           >
             <p style={{ marginRight: "8px" }}>KL.</p>
             <TextField
               variant="standard"
-              placeholder="12 sek og 4 år"
+              placeholder="?"
               InputProps={{
                 style: {
                   fontFamily: "Covered By Your Grace",
                   fontSize: "35px",
-                  width: "60px",
+                  fontWeight: "bold",
+                  width: "70px",
                 },
               }}
+              inputProps={{
+                style: { textTransform: "uppercase" },
+              }}
             />
-            <p style={{ marginLeft: "5px" }}>:</p>
+            <p style={{ marginLeft: "5px", fontWeight: "bold" }}>:</p>
           </Grid>
-          <Grid xs={8}>blah blah</Grid>
+          <Grid xs={9}>
+            <TextField
+              variant="standard"
+              fullWidth
+              placeholder="???"
+              multiline
+              InputProps={{
+                style: {
+                  fontFamily: "Covered By Your Grace",
+                  fontSize: "35px",
+                },
+              }}
+              inputProps={{
+                style: { textTransform: "uppercase" },
+              }}
+            />
+          </Grid>
         </Grid>
       </Box>
     </Container>
